@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Writer's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Nzioki Dennis</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="portfolio.html"><i class="fas fa-book"></i> Portfolio</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="bio.html"><i class="fas fa-user"></i> Bio</a></li>
+        </ul>
+    </nav>    
+    <main>
+        <div class="typewriter">
+            <h1>Reading is eavesdropping on the greatest conversations across generations</h1>
+        </div>
+        <!-- Your home content goes here -->
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Nzioki Dennis</p>
+    </footer>
+
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Update the content of the element with the current year
+        document.getElementById("currentYear").textContent = currentYear;
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Writer's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Additional CSS styles specific to this page */
+        /* Style for article elements */
+        article {
+            margin-bottom: 20px;
+            width: 45%; /* Set the width for each article to fit two per row */
+            display: inline-block; /* Display articles inline to form a grid */
+            vertical-align: top; /* Align articles to the top of the container */
+            height: 220px; /* Set a fixed height for the articles */
+            border: 1px solid #ddd; /* Add a border for better separation */
+            padding: 10px; /* Add padding to the articles for spacing */
+        }
+
+        /* Style for article titles */
+        article h2 {
+            font-size: 1.2rem;
+        }
+
+        /* Style for article dates */
+        article p {
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        /* Style for the "Read More" links */
+        article a {
+            display: block; /* Make the links full width within the article */
+            margin-top: 10px; /* Add spacing between articles and links */
+            text-align: center; /* Center-align the links */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nzioki Dennis</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="portfolio.html"><i class="fas fa-book"></i> Portfolio</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="bio.html"><i class="fas fa-user"></i> Bio</a></li>
+        </ul>
+    </nav>    
+    <main>
+        <!-- The first paper -->
+        <article>
+            <h2>React: A comprehensive Guide to Beginners</h2>
+            <p>Date: <span class="technical-paper-date"></span></p>
+            <p>This paper takes beginners through a comprehensive guide for those interested in learning ReactJs</p>
+            <a href="https://dev.to/nziokidennis/react-a-comprehensive-guide-to-beginners-1nh0" target="_blank">Read More</a>
+        </article>
+
+        <article>
+            <h2>Getting Started with Test Driven Development (TDD) </h2>
+            <p>Date: <span class="technical-paper-date"></span></p>
+            <p>Test-Driven Development (TDD) is a software development approach that 
+                centers around creating unit test cases before the actual code implementation. In this paper we look at TDD at a deeper level.</p>
+            <a href="https://dev.to/nziokidennis/getting-started-with-test-driven-development-tdd-1447" target="_blank">Read More</a>
+        </article>
+
+        <article>
+            <h2>Contributing to Open Source</h2>
+            <p>Date: <span class="technical-paper-date"></span></p>
+            <p>Open Source project is a type of software whose source code is made public for viewing, use, modifying, and distribution.
+                How can one contribute to open source? Well lets dive in.</p>
+            <a href="https://dev.to/nziokidennis/contributing-to-open-source-2fh6" target="_blank">Read More</a>
+        </article>
+
+        <!-- Example for Technical Paper 1 -->
+        <article>
+            <h2>Javascript Validation</h2>
+            <p>Date: <span class="technical-paper-date"></span></p>
+            <p>Data validation is the verification or checking that data provided in terms of correctness, accuracy against preset rules, formats or even constraints. 
+                JavaScript provides a way in which we can validate our data as it moves from client side to a web server. </p>
+            <a href="https://dev.to/nziokidennis/javascript-validation-39ka" target="_blank">Read More</a>
+        </article>
+
+        <article>
+            <h2> JavaScript Asynchronous Programming: Concepts and Best Practices </h2>
+            <p>Date: <span class="technical-paper-date"></span></p>
+            <p>Asynchronicity means that if JavaScript has to wait for an operation to complete, it will execute the rest of the code while waiting.
+                What does that mean?</p>
+            <a href="https://dev.to/nziokidennis/javascript-validation-39ka" target="_blank">Read More</a>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Nzioki Dennis</p>
+    </footer>
+
+    <script>
+        // Function to format the current date as "Month Day, Year"
+        function formatDate(date) {
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            return date.toLocaleDateString('en-US', options);
+        }
+
+        // Get the current date
+        const currentDate = new Date();
+
+    
+
+        // Set the current date in all elements with class "technical-paper-date"
+        const technicalPaperDateElements = document.querySelectorAll(".technical-paper-date");
+        technicalPaperDateElements.forEach((element) => {
+            element.textContent = formatDate(currentDate);
+        });
+
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Update the content of the element with the current year
+        document.getElementById("currentYear").textContent = currentYear;
+    </script>
+</body>
+</html>

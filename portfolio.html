@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Writer's Portfolio - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Nzioki Dennis</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="portfolio.html"><i class="fas fa-book"></i> Portfolio</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="bio.html"><i class="fas fa-user"></i> Bio</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="portfolio-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my writings on two distinct topics:</p>
+            <div class="portfolio-boxes">
+                <!-- Aviation Blogs Box -->
+                <div class="portfolio-box aviation-box">
+                    <a href="aviation-blogs.html">
+                        <h3 style="color: white;">Aviation Blogs</h3>
+                        <p style="color: white;">Discover a collection of my aviation-related blog posts.</p>
+                    </a>
+                </div>
+                <!-- Technical Papers Box -->
+                <div class="portfolio-box technical-box">
+                    <a href="technical-papers.html">
+                        <h3 style="color: white;">Technical Papers</h3>
+                        <p style="color: white;">Explore my technical papers and articles.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Nzioki Dennis</p>
+    </footer>
+
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Update the content of the element with the current year
+        document.getElementById("currentYear").textContent = currentYear;
+    </script>
+</body>
+</html>

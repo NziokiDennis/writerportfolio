@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Writer's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Additional CSS styles specific to this page */
+        /* Style for article elements */
+        article {
+            margin-bottom: 20px;
+            width: 45%; /* Set the width for each article to fit two per row */
+            display: inline-block; /* Display articles inline to form a grid */
+            vertical-align: top; /* Align articles to the top of the container */
+            height: 220px; /* Set a fixed height for the articles */
+            border: 1px solid #ddd; /* Add a border for better separation */
+            padding: 10px; /* Add padding to the articles for spacing */
+        }
+
+        /* Style for article titles */
+        article h2 {
+            font-size: 1.2rem;
+        }
+
+        /* Style for article dates */
+        article p {
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        /* Style for the "Read More" links */
+        article a {
+            display: block; /* Make the links full width within the article */
+            margin-top: 10px; /* Add spacing between articles and links */
+            text-align: center; /* Center-align the links */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nzioki Dennis</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="portfolio.html"><i class="fas fa-book"></i> Portfolio</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="bio.html"><i class="fas fa-user"></i> Bio</a></li>
+        </ul>
+    </nav>    
+    <main>
+        <!-- Example for Aviation Blog Post 1 -->
+        <article>
+            <h2>Drone Safety</h2>
+            <p>Date: <span class="aviation-blog-date"></span></p>
+            <p>Drone safety in aviation refers to the set of measures, regulations, and practices designed to ensure the 
+                safe operation of unmanned aerial vehicles (UAVs) or drones within the airspace shared with manned aircraft.</p>
+            <a href="https://wordpress.com/post/planetarypilots.wordpress.com/123" target="_blank">Read More</a>
+        </article>
+
+        <!-- Example for Technical Paper 1 -->
+        <article>
+            <h2>Pilot Hypoxia</h2>
+            <p>Date: <span class="aviation-blog-date"></span></p>
+            <p>Pilot Hypoxia is a condition that occurs when a pilot or aircrew member experiences 
+                a deficiency of oxygen (hypoxia) while operating an aircraft at high altitudes. 
+                This oxygen deficiency can impair cognitive and physical functions due to reduced oxygen pressure and availability in the cabin or cockpit. </p>
+            <a href="https://wordpress.com/post/planetarypilots.wordpress.com/334" target="_blank">Read More</a>
+        </article>
+
+        <article>
+            <h2>Autonomous Planes/Flights</h2>
+            <p>Date: <span class="aviation-blog-date"></span></p>
+            <p>Autonomous flights refer to aircraft operations in which the aircraft is capable of performing various tasks, including 
+                navigation, takeoff, landing, and potentially other complex maneuvers, without direct human intervention or control.</p>
+            <a href="https://wordpress.com/post/planetarypilots.wordpress.com/320" target="_blank">Read More</a>
+        </article>
+
+        <article>
+            <h2>Missiles</h2>
+            <p>Date: <span class="aviation-blog-date"></span></p>
+            <p>A missile is a guided rocket-propelled weapon powered by a jet engine or rocket motor used to deliver a warhead at lethal 
+                speeds with high precision. To achieve this, a missile utilizes several technologies...</p>
+            <a href="https://wordpress.com/post/planetarypilots.wordpress.com/307" target="_blank">Read More</a>
+        </article>
+        <!-- Example for Aviation Blog Post 1 -->
+        <article>
+            <h2>Types of aircraft engines</h2>
+            <p>Date: <span class="aviation-blog-date"></span></p>
+            <p>When the Wright brothers flew their plane in 1903, they used a bit "crude" engine composed of horizontal inline cylinders – 4-inch stroke, 
+                cast iron cylinders fit into a cast aluminum crankcase to form a water jacket around the cylinder barrels...</p>
+            <a href="https://wordpress.com/post/planetarypilots.wordpress.com/285" target="_blank">Read More</a>
+        </article>
+
+        <!-- Example for Technical Paper 1 -->
+        <article>
+            <h2>VTOL</h2>
+            <p>Date: <span class="aviation-blog-date"></span></p>
+            <p>VTOL, which stands for Vertical Takeoff and Landing, 
+                refers to the ability of an aircraft to ascend, descend, and hover in a vertical manner without requiring a traditional runway for takeoff or landing...</p>
+            <a href="https://wordpress.com/post/planetarypilots.wordpress.com/204" target="_blank">Read More</a>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Nzioki Dennis</p>
+    </footer>
+
+    <script>
+        // Function to format the current date as "Month Day, Year"
+        function formatDate(date) {
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            return date.toLocaleDateString('en-US', options);
+        }
+
+        // Get the current date
+        const currentDate = new Date();
+
+        // Set the current date in all elements with class "aviation-blog-date"
+        const aviationBlogDateElements = document.querySelectorAll(".aviation-blog-date");
+        aviationBlogDateElements.forEach((element) => {
+            element.textContent = formatDate(currentDate);
+        });
+
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Update the content of the element with the current year
+        document.getElementById("currentYear").textContent = currentYear;
+    </script>
+</body>
+</html>

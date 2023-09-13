@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Writer's Portfolio - Bio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Nzioki Dennis</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="portfolio.html"><i class="fas fa-book"></i> Portfolio</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="bio.html"><i class="fas fa-user"></i> Bio</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="bio-content">
+            <h2>About Me</h2>
+            <p>I'm Nzioki Dennis, a freelance developer with a passion for software development and aviation. My journey in the world of technology and flight has been an exciting one.</p>
+            <p>As a software developer, I enjoy creating innovative solutions and exploring the ever-evolving landscape of programming languages and technologies.</p>
+            <p>Simultaneously, my fascination with aviation fuels my desire to learn about aerodynamics, aircraft design, and the principles that allow us to defy gravity.</p>
+            <p>Through my writings, I aim to share insights, knowledge, and the joy I find in these two distinct yet captivating worlds of software development and aviation.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Nzioki Dennis</p>
+    </footer>
+
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Update the content of the element with the current year
+        document.getElementById("currentYear").textContent = currentYear;
+    </script>
+</body>
+</html>

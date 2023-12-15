@@ -90,11 +90,11 @@ main {
 
 /* Small screens (phones) */
 @media only screen and (max-width: 480px) {
-    /* Adjust font size and other properties for better display on smaller screens */
+    /* Adjust font size for better display on smaller screens */
     .typewriter h1 {
-        font-size: 1.5rem; /* Adjust the font size as needed */
-        letter-spacing: .1em; /* Adjust the letter spacing as needed */
+        font-size: 1.2rem; /* Adjust the font size as needed */
     }
+
     /* Additional mobile-specific styles can be added here */
 }
 

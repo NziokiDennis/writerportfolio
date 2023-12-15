@@ -90,11 +90,11 @@ main {
 
 /* Small screens (phones) */
 @media only screen and (max-width: 480px) {
-    /* Adjust font size for better display on smaller screens */
+    /* Adjust font size and other properties for better display on smaller screens */
     .typewriter h1 {
-        font-size: 1.2rem; /* Adjust the font size as needed */
+        font-size: 1.5rem; /* Adjust the font size as needed */
+        letter-spacing: .1em; /* Adjust the letter spacing as needed */
     }
-
     /* Additional mobile-specific styles can be added here */
 }
 
@@ -209,21 +209,33 @@ article {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%; /* Set the width for each article to full width on mobile */
+    display: block; /* Display articles as blocks */
+    border: 1px solid #ddd; /* Add a border for better separation */
+    padding: 10px; /* Add padding to the articles for spacing */
 }
 
 article h2 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 article p {
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
+    font-style: italic;
+    margin-top: 5px;
 }
 
 a {
     text-decoration: none;
     color: #007BFF;
     font-weight: bold;
+    display: block; /* Make the links full width within the article */
+    margin-top: 10px; /* Add spacing between articles and links */
+    text-align: center; /* Center-align the links */
+    padding: 5px; /* Add padding for better touch interaction on mobile */
+    color: #fff; /* Text color for better visibility */
 }
 
 a:hover {
@@ -264,7 +276,16 @@ a:hover {
 
 /* Small screens (phones) */
 @media only screen and (max-width: 480px) {
-  body {
-    width: 100%;
+    body {
+      width: 100%;
+    }
+    article {
+        padding: 15px; /* Increase padding for better spacing on mobile */
+    }
+
+    /* Style for article titles on mobile */
+    article h2 {
+        font-size: 1.5rem; /* Adjust the font size on mobile */
+    }
   }
-}
+

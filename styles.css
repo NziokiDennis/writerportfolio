@@ -252,12 +252,8 @@ a:hover {
 }
 
 /* Small screens (phones) */
-/* Small screens (phones) */
-@media only screen and (max-width: 600px) {
-    body {
-        background-size: contain; /* Adjusted background size for better display on small screens */
-        background-position: center; /* Center the background image on small screens */
-    }
-
-    /* Additional mobile-specific styles can be added here if needed */
+@media only screen and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
 }

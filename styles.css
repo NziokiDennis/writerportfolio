@@ -67,12 +67,13 @@ main {
     animation: 
       typing 3.5s steps(30, end),
       blink-caret .5s step-end infinite;
-
+    
+    /* Center-align vertically and horizontally */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Set the container height to 100% of the viewport height */
 }
 
 /* The typing effect */
@@ -85,6 +86,16 @@ main {
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: orange }
+}
+
+/* Small screens (phones) */
+@media only screen and (max-width: 480px) {
+    /* Adjust font size and other properties for better display on smaller screens */
+    .typewriter h1 {
+        font-size: 1.5rem; /* Adjust the font size as needed */
+        letter-spacing: .1em; /* Adjust the letter spacing as needed */
+    }
+    /* Additional mobile-specific styles can be added here */
 }
 
 /* Style the footer */

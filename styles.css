@@ -13,25 +13,23 @@ body {
 }
 
 /* Style the header (your name and title) */
-/* Style the header (your name and title) */
 header {
-    text-align: center; /* Center-align the content */
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background color for better readability */
-    color: #fff; /* Text color */
-    padding: 15px; /* Add some padding for spacing */
-    margin-bottom: -25px; /* Negative margin to move it up */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px;
+    margin-bottom: -25px;
 }
 
 /* Style the navigation menu */
 nav {
-    /*background-color: #333; Background color for the navigation menu */
-    color: #fff; /* Text color */
+    color: #fff;
 }
 
 nav ul {
     list-style-type: none;
-    display: flex; /* Arrange navigation items horizontally */
-    justify-content: space-around; /* Space them evenly */
+    display: flex;
+    justify-content: space-around;
     padding: 0px;
 }
 
@@ -43,34 +41,20 @@ nav a {
 /* Center-align your name */
 h1 {
     text-align: center;
-    margin-top: 10px; /* Add some space above your name */
+    margin-top: 10px;
 }
 
 /* Style the main content area */
 main {
     padding: 20px;
-    min-height: calc(100vh - 200px); /* Adjust the value to maintain space for the footer */
+    min-height: calc(100vh - 200px);
 }
 
-/* Add this CSS at the end of your existing styles.css */
-
-/* Style for the welcome message container */
+/* Style the welcome message container */
 .welcome-container {
     text-align: center;
-    margin-top: 50px; /* Adjust the margin to position it as desired */
+    margin-top: 50px;
 }
-
-/* Add this CSS at the end of your existing styles.css */
-
-/* Add this CSS at the end of your existing styles.css */
-
-/* Style for the welcome message container */
-.welcome-container {
-    text-align: center;
-    margin-top: 50px; /* Adjust the margin to position it as desired */
-}
-
-/* Style for the welcome message itself */
 
 /* Style for the welcome message itself */
 .typewriter h1 {
@@ -83,27 +67,25 @@ main {
     animation: 
       typing 3.5s steps(30, end),
       blink-caret .5s step-end infinite;
-    
-    /* Center-align vertically and horizontally */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Set the container height to 100% of the viewport height */
+    height: 100vh;
 }
 
-  
-  /* The typing effect */
-  @keyframes typing {
+/* The typing effect */
+@keyframes typing {
     from { width: 0 }
     to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: orange }
-  }
+}
 
 /* Style the footer */
 footer {
@@ -116,52 +98,50 @@ footer {
     width: 100%;
 }
 
-/* Add additional styles specific to each page if needed */
-
 /* Style for the bio content */
 .bio-content {
-    max-width: 800px; /* Adjust the maximum width as needed */
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     text-align: left;
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for a card-like appearance */
-    border-radius: 10px; /* Rounded corners */
-    color: #333; /* Text color */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: #333;
 }
 
 /* Style for the contact content */
 .contact-content {
-    max-width: 800px; /* Adjust the maximum width as needed */
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     text-align: left;
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for a card-like appearance */
-    border-radius: 10px; /* Rounded corners */
-    color: #333; /* Text color */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: #333;
 }
 
 /* Style for the headings on the bio and contact pages */
 .bio-content h2, .contact-content h2 {
-    color: #333; /* Heading color */
+    color: #333;
 }
 
 /* Style for the bio and contact page links */
 .bio-content a, .contact-content a {
-    color: #007BFF; /* Link color */
+    color: #007BFF;
     text-decoration: none;
 }
 
 .bio-content a:hover, .contact-content a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline;
 }
-
 
 /* Style for the portfolio content */
 .portfolio-content {
     text-align: center;
     padding: 20px;
+    color: white;
 }
 
 /* Style for the portfolio boxes */
@@ -176,23 +156,23 @@ footer {
 .portfolio-box {
     width: 300px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
-    border-radius: 10px; /* Rounded corners */
-    color: #333; /* Text color */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: #333;
     text-align: center;
 }
 
 /* Style for the aviation box */
 .aviation-box {
-    background-image: url(./Images/plane-sunset-starry-sky-illustration-red-sky-3840x2160-299.jpg); /* Replace with your aviation image */
+    background-image: url(./Images/plane-sunset-starry-sky-illustration-red-sky-3840x2160-299.jpg);
     background-size: cover;
     background-position: center;
 }
 
 /* Style for the technical box */
 .technical-box {
-    background-image: url(./Images/photo-1678728245335-244ffd160d54.png); /* Replace with your technical image */
+    background-image: url(./Images/photo-1678728245335-244ffd160d54.png);
     background-size: cover;
     background-position: center;
 }
@@ -204,7 +184,7 @@ footer {
 }
 
 .portfolio-box a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline;
 }
 
 /* Style for the aviation blogs page */
@@ -275,4 +255,9 @@ a:hover {
 @media only screen and (max-width: 600px) {
     /* Define your mobile-specific styles here */
     /* For example, you can adjust font sizes, margins, or padding to make it more readable on small screens */
+
+    /* Responsive background image */
+    body {
+        background-size: contain; /* Adjust as needed */
+    }
 }

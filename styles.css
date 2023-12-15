@@ -60,13 +60,13 @@ main {
 .typewriter h1 {
     color: #fff;
     font-family: monospace;
-    overflow: hidden;
+    /* overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
     animation: 
       typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
+      blink-caret .5s step-end infinite; */
     
     /* Center-align vertically and horizontally */
     display: flex;
